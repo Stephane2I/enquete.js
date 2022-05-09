@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Enquete </title>
+	<style type="text/css">
+		 body{
+		 	display: flex;
+		 	justify-content: center;
+		 	align-items: center;
+		 	flex-direction: column;
+		 }
+		.circle{
+			width: 400px;
+			height: 400px;
+			background-color: #FFE4C4;
+			border-radius: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+			align-content: center;
+		}
+		button{
+			height: 50px;
+			width: 50px;
+			background-color: #E9967A;
+			margin-top: 8px;
+
+		}
+		.barra{
+			width: 10px;
+			height: 20px;
+			margin-top: 8px;
+		}
+
+		#sim{
+			background-color: #90EE90;
+		}
+
+		#nao{
+			background-color: #B22222;
+		}
+	</style>		
+</head>
+<body>
+    <div class="circle">
+		Você tem 16 anos ou mais?
+    </div>
+
+    <div>
+        <button onclick="aumentar(1)"> Sim </button>
+        <button onclick="aumentar(0)"> Não </button>
+    </div>
+
+    <div>
+    	<div class="barra" id="sim"> 0 </div>
+    	<div class="barra" id="nao"> 0 </div>
+    </div>
+<script src="scripten.js" >
+	
+</script>
+</body>
+</html>
